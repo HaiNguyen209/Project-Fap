@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Project
+=======
 # Project
 # Simulate-FAP
 Các chức năng chính của dự án: 
@@ -26,3 +29,4 @@ Schedule(id, accountId, subject_code, subject_name, slotId, room ).
 Slot(id, datetime)
 
 Student(Id, Name, birthdate, gender, rollnumber, address, phone, email, image)
+>>>>>>> c2cd1c4e807437a34add1d06f1460c02e82ac1f7

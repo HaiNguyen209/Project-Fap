@@ -13,7 +13,7 @@ namespace Project.Models
         public string UserName { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Password is not empty")]
-        [MaxLength(6,ErrorMessage = "Password less than 6 character")]
+        [StringLength(6)]
         public string Password { get; set; }
         public int? RoleId { get; set; }
 
