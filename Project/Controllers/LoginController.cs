@@ -14,7 +14,7 @@ namespace Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Account acc)
+        public IActionResult Add(Account acc)
         {
             if (ModelState.IsValid) //Model đc tạo ra mà k có lỗi
             {
@@ -22,7 +22,7 @@ namespace Project.Controllers
             }
             else
             {
-                return View(acc);
+               return View(acc);
             }
         }
     }
