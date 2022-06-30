@@ -5968,11 +5968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Summer2022\\ProjectDotNet\\Project\\Project\\Project.csproj",
+      "projectUniqueName": "D:\\Summer2022\\Project\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "D:\\Summer2022\\ProjectDotNet\\Project\\Project\\Project.csproj",
+      "projectPath": "D:\\Summer2022\\Project\\Project\\Project.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Summer2022\\ProjectDotNet\\Project\\Project\\obj\\",
+      "outputPath": "D:\\Summer2022\\Project\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
