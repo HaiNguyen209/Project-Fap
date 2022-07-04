@@ -1,0 +1,138 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Project.Models
+@model List<Attendance>
+
+<style>
+    .container{
+        max-width:1024px;
+        margin: auto auto;
+
+    }
+    .breadcrumb{
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 4px 8px;
+        margin: 1rem 0rem;
+        display: flex;
+        justify-content:end;
+    }
+    .breadcrumb a{
+        text-decoration: none;
+        background-color: #5cb85c;
+        color: #fff;
+        border-radius: .25rem;
+        font-weight:700;
+        font-size: .75rem;
+        padding : .3rem;
+        margin: 0 0.2rem;
+    }
+     .content table{
+        width: 100%;
+        background-color:transparent;
+        border-collapse:collapse;
+    }
+    .content table tr{
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .edit{
+        position: absolute;
+        background-color: #f5f5f5;
+        color: #000;
+        padding: 0.4rem 0.6rem;
+        border-radius: 8px;
+        text-align: center;
+        left: 50%;
+        margin-top: 1rem;
+        font-weight: 700;
+        border:none;
+        cursor:pointer;
+        margin-bottom: 4rem;
+    }
+    .edit:hover{
+        background-color: #337ab7;
+        color: #fff;
+    }
+    .content table thead tr{
+        background-color:#337ab7;
+        color: white;
+    }
+     .attendend{
+        color: green;
+    }
+    .absent{
+        color: red;
+    }
+    .content-input{
+        border: none;
+    }
+</style>
+
+<div class="container">
+    <header>
+        <h1>
+             FPT University Acadumic Portal
+        </h1>
+    </header>
+    <div class="breadcrumb">
+        <a> User name </a>
+        <a> Login </a>
+        <a> Campus:FPTU- Hoà Lạc</a>
+    </div>
+
+    <div class="content">
+        <h1>Edit Attendence</h1>
+        <form asp-controller="Attendence" asp-action="Edit" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Index</td>
+                        <td>Image</td>
+                        <td>Member</td>
+                        <td>Code</td>
+                        <td>Name</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+                
+                @for (int i = 0; i < @Model.Count(); i++)
+                {
+                  <tr>
+                        <td><input class="content-input" asp-for="@Model[i].Id"  readonly/> </td>
+                        <td><img src="@Model[i].Image" /></td>
+                        <td><input class="content-input" asp-for="@Model[i].RollNumber" type="text"  /></td>
+                        <td><input class="content-input" asp-for="@Model[i].Code" type="text" /></td>
+                        <td><input class="content-input" asp-for="@Model[i].Name" type="text"  /></td>
+                        <td>
+                            <input id="@Model[i].Id" type="radio" asp-for="@Model[i].Status" value="true" /> <label class="attendend">Attendence</label>
+                            <input id="@Model[i].Id" type="radio" asp-for="@Model[i].Status" value="false" /> <lalel class="absent">Absent</lalel> 
+                        </td>
+                    </tr>
+                }
+
+               @* @foreach (Attendance a in Model)
+                {
+                    <tr>
+                        <td>@a.Id</td>
+                        <td>@a.Image</td>
+                        <td>@a.RollNumber</td>
+                        <td>@a.Code</td>
+                        <td><input asp-for="@a.Name" /></td>
+                        <td>
+                            <input id="@a.Id" name="@a.Name" type="radio" asp-for="@a.Status" value="true" > Attendence
+                            <input id="@a.Id" name="@a.Name" type="radio" asp-for="@a.Status" value="false" > Adsent
+                        </td>
+                    </tr>
+                }*@
+                
+            </table>
+            <input class="edit" type="submit" value="Save"/>
+        </form>
+    
+    </di>
+
+</div>

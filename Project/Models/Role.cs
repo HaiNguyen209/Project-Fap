@@ -15,13 +15,6 @@ namespace Project.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public Role(int id, string name, ICollection<Account> accounts)
-        {
-            Id = id;
-            Name = name;
-            Accounts = accounts;
-        }
-
         public virtual ICollection<Account> Accounts { get; set; }
     }
 }

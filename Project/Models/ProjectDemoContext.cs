@@ -29,10 +29,12 @@ namespace Project.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var builder = new ConfigurationBuilder()
-                                          .SetBasePath(Directory.GetCurrentDirectory())
-                                          .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                                         .SetBasePath(Directory.GetCurrentDirectory())
+                                         .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ProjectDemo"));
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ProjectFap"));
+
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -64,6 +66,11 @@ namespace Project.Models
                 entity.ToTable("Attendance");
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
+
+                entity.Property(e => e.Code)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("code");
 
                 entity.Property(e => e.Image)
                     .IsUnicode(false)

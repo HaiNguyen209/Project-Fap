@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project.Models;
+//using Project.Models;
 
 
 namespace Project.Controllers
@@ -12,14 +12,15 @@ namespace Project.Controllers
         }
         public IActionResult Login()
         {
-            Account account = new Account();
-            return View(account);
+            // Account account = new Account();
+            // return View(account);
+            return View();
         }
-        [HttpPost]
-        public IActionResult Login(Account account)
-        {
-            if (ModelState.IsValid)  return View(account);
-            else return View(account);
-        }
+        //[HttpPost]
+        //public IActionResult Login(Account account)
+        //{
+        //    if (ModelState.IsValid)  return View(account);
+        //    else return View(account);
+        //}
     }
 }

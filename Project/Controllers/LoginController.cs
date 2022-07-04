@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project.Models;
+//using Project.Models;
 
 
 namespace Project.Controllers
@@ -13,17 +13,17 @@ namespace Project.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Add(Account acc)
-        {
-            if (ModelState.IsValid) //Model đc tạo ra mà k có lỗi
-            {
-                return RedirectToAction("Index", acc);
-            }
-            else
-            {
-               return View(acc);
-            }
-        }
+        //[HttpPost]
+        //public IActionResult Add(Account acc)
+        //{
+        //    if (ModelState.IsValid) //Model đc tạo ra mà k có lỗi
+        //    {
+        //        return RedirectToAction("Index", acc);
+        //    }
+        //    else
+        //    {
+        //       return View(acc);
+        //    }
+        //}
     }
 }
