@@ -1,0 +1,125 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using Project.Models
+@model List<Attendance>
+<style>
+    .container{
+        max-width:1024px;
+        margin: auto auto;
+
+    }
+    .breadcrumb{
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 4px 8px;
+        margin: 1rem 0rem;
+        display: flex;
+        justify-content:end;
+    }
+    .breadcrumb a{
+        text-decoration: none;
+        background-color: #5cb85c;
+        color: #fff;
+        border-radius: .25rem;
+        font-weight:700;
+        font-size: .75rem;
+        padding : .3rem;
+        margin: 0 0.2rem;
+    }
+    .content table{
+        width: 100%;
+        background-color:transparent;
+        border-collapse:collapse;
+    }
+    .content table tr{
+        border-bottom: 1px solid #f0f0f0;
+    }
+     .edit{
+        position: absolute;
+        text-decoration: none;
+        background-color: #f3f3f3;
+        color: #000;
+        width: max-content;
+        padding: 0.4rem 0.6rem;
+        border-radius: 8px;
+        text-align: center;
+        left: 50%;
+        margin-top: 1rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+
+    }
+     .edit:hover{
+        background-color: #337ab7;
+        color: #fff;
+    }
+    .content table thead tr{
+        background-color:#337ab7;
+        color: white;
+    }
+    .attendend{
+        color: green;
+    }
+    .absent{
+        color: red;
+    }
+</style>
+
+<div class="container">
+    <header>
+        <h1>
+             FPT University Acadumic Portal
+        </h1>
+    </header>
+    <div class="breadcrumb">
+        <a> User name </a>
+        <a asp-controller="Home" asp-action="Login"> Login </a>
+        <a> Campus:FPTU- Hoà Lạc</a>
+    </div>
+
+    <div class="content">
+        <h1>Check Attendence</h1>
+       <table>
+           <thead>
+                <tr>
+                   <td>Index</td>
+                   <td>Image</td>
+                   <td>Member</td>
+                   <td>Code</td>
+                   <td>Name</td>
+                   <td>Status</td>
+                </tr>
+           </thead>
+         
+           @foreach (Attendance a in Model)
+            {
+                <tr>
+                   <td>@a.Id</td>
+                   @*<td><img src="@Url.Content("~/image/HE141786.jpg")" alt="hi" /></td>*@
+                   <td><img src="file:/D:/Summer2022/ProjectFap/Project/wwwroot/image/HA160108.jpg"/></td>
+                   <td>@a.RollNumber</td>
+                   <td>@a.Code</td>
+                   <td>@a.Name </td>
+                   @if (@a.Status == true)
+                    {
+                        <td class="attendend">Attendend</td>
+                    }
+                    else
+                    {
+                    <td class="absent"> Absent </td>
+                        
+                    }
+                  @*  <td>@((bool)a.Status ? "Attendend" : "Absent")</td>*@
+               </tr>
+            }
+       </table>
+       <a class="edit" asp-controller="Attendence" asp-action="Edit" asp-route-list="" >Edit</a>
+    </div>
+
+</div>
