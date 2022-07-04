@@ -22,6 +22,40 @@
 
   <ItemGroup>
     <None Include="wwwroot\css\LoginStyles.css" />
+    <None Include="wwwroot\image\HA160108.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\image\HE130580.jpg" />
+    <None Include="wwwroot\image\HE130651.png" />
+    <None Include="wwwroot\image\HE140702.png" />
+    <None Include="wwwroot\image\HE141190.png" />
+    <None Include="wwwroot\image\HE141786.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\image\HE150055.png" />
+    <None Include="wwwroot\image\HE150397.png" />
+    <None Include="wwwroot\image\HE150980.png" />
+    <None Include="wwwroot\image\HE150990.png" />
+    <None Include="wwwroot\image\HE150993.png" />
+    <None Include="wwwroot\image\HE151003.png" />
+    <None Include="wwwroot\image\HE151020.png" />
+    <None Include="wwwroot\image\HE151077.png" />
+    <None Include="wwwroot\image\HE151203.png" />
+    <None Include="wwwroot\image\HE151243.png" />
+    <None Include="wwwroot\image\HE151244.png" />
+    <None Include="wwwroot\image\HE151260.png" />
+    <None Include="wwwroot\image\HE151276.png" />
+    <None Include="wwwroot\image\HE151280.png" />
+    <None Include="wwwroot\image\HE151319.png" />
+    <None Include="wwwroot\image\HE151322.png" />
+    <None Include="wwwroot\image\HE151325.png" />
+    <None Include="wwwroot\image\HE151418.png" />
+    <None Include="wwwroot\image\HE153078.png" />
+    <None Include="wwwroot\image\HE153150.png" />
+    <None Include="wwwroot\image\HE153498.png" />
+    <None Include="wwwroot\image\HE153518.png" />
+    <None Include="wwwroot\image\HE153773.png" />
+    <None Include="wwwroot\image\SE05576.png" />
   </ItemGroup>
 
 </Project>
