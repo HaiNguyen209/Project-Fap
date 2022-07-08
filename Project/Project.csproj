@@ -5,6 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Styles\Attendence.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Styles\Attendence.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery.UI" Version="1.12.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,41 +33,38 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\LoginStyles.css" />
-    <None Include="wwwroot\image\HA160108.jpg">
+    <None Include="wwwroot\styles\LoginStyles.css" />
+    <None Include="wwwroot\images\HA160108.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\image\HE130580.jpg" />
-    <None Include="wwwroot\image\HE130651.png" />
-    <None Include="wwwroot\image\HE140702.png" />
-    <None Include="wwwroot\image\HE141190.png" />
-    <None Include="wwwroot\image\HE141786.jpg">
+    <None Include="wwwroot\images\HE130580.jpg" />
+    <None Include="wwwroot\images\HE141786.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="wwwroot\image\HE150055.png" />
-    <None Include="wwwroot\image\HE150397.png" />
-    <None Include="wwwroot\image\HE150980.png" />
-    <None Include="wwwroot\image\HE150990.png" />
-    <None Include="wwwroot\image\HE150993.png" />
-    <None Include="wwwroot\image\HE151003.png" />
-    <None Include="wwwroot\image\HE151020.png" />
-    <None Include="wwwroot\image\HE151077.png" />
-    <None Include="wwwroot\image\HE151203.png" />
-    <None Include="wwwroot\image\HE151243.png" />
-    <None Include="wwwroot\image\HE151244.png" />
-    <None Include="wwwroot\image\HE151260.png" />
-    <None Include="wwwroot\image\HE151276.png" />
-    <None Include="wwwroot\image\HE151280.png" />
-    <None Include="wwwroot\image\HE151319.png" />
-    <None Include="wwwroot\image\HE151322.png" />
-    <None Include="wwwroot\image\HE151325.png" />
-    <None Include="wwwroot\image\HE151418.png" />
-    <None Include="wwwroot\image\HE153078.png" />
-    <None Include="wwwroot\image\HE153150.png" />
-    <None Include="wwwroot\image\HE153498.png" />
-    <None Include="wwwroot\image\HE153518.png" />
-    <None Include="wwwroot\image\HE153773.png" />
-    <None Include="wwwroot\image\SE05576.png" />
+    <None Include="wwwroot\images\HE150055.png" />
+    <None Include="wwwroot\images\HE150397.png" />
+    <None Include="wwwroot\images\HE150980.png" />
+    <None Include="wwwroot\images\HE150990.png" />
+    <None Include="wwwroot\images\HE150993.png" />
+    <None Include="wwwroot\images\HE151003.png" />
+    <None Include="wwwroot\images\HE151020.png" />
+    <None Include="wwwroot\images\HE151077.png" />
+    <None Include="wwwroot\images\HE151203.png" />
+    <None Include="wwwroot\images\HE151243.png" />
+    <None Include="wwwroot\images\HE151244.png" />
+    <None Include="wwwroot\images\HE151260.png" />
+    <None Include="wwwroot\images\HE151276.png" />
+    <None Include="wwwroot\images\HE151280.png" />
+    <None Include="wwwroot\images\HE151319.png" />
+    <None Include="wwwroot\images\HE151322.png" />
+    <None Include="wwwroot\images\HE151325.png" />
+    <None Include="wwwroot\images\HE151418.png" />
+    <None Include="wwwroot\images\HE153078.png" />
+    <None Include="wwwroot\images\HE153150.png" />
+    <None Include="wwwroot\images\HE153498.png" />
+    <None Include="wwwroot\images\HE153518.png" />
+    <None Include="wwwroot\images\HE153773.png" />
+    <None Include="wwwroot\images\SE05576.png" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project.Models;
+using Project.Model;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,23 +8,31 @@ namespace Project.Controllers
     public class AttendenceController : Controller
     {
 
-       ProjectDemoContext context = new ProjectDemoContext();
-        public IActionResult Index()
+        ProjectFapContext context = new ProjectFapContext();
+        public IActionResult Index(string id)
         {
-         //   ViewBag.Attendence = context.Attendances.ToList();
-            return View(context.Attendances.ToList());
+            var dataClass = context.Grades.Where(cls => cls.Id == id);
+
+            var dataAttendence = (from c in dataClass
+                                  join a in context.Attendances on c.Id equals a.ClassId
+                                  where a.ClassId == id
+                                  select a).ToList();
+
+            return View(dataAttendence);
         }
-        public IActionResult Edit()
+
+        public IActionResult Edit(string id)
         {
-            var ListAttendance = context.Attendances.ToList();
+            var ListAttendance = (from g in context.Grades
+                                 join a in context.Attendances on g.Id equals a.ClassId
+                                 where g.Id == id
+                                 select a).ToList();
+
             return View(ListAttendance);
         }
         [HttpPost]
         public IActionResult Edit(List<Attendance> ListAttendance)
         {
-            //foreach (Attendance attendance in ListAttendance)
-            //{
-            //    context.Attendances.Update(attendance);
             try
             {
                 for (int i = 0; i < ListAttendance.Count(); i++)
@@ -37,9 +45,7 @@ namespace Project.Controllers
             {
                 System.Console.WriteLine("Edit error" + ex.Message);
             }
-            //}
-                return RedirectToAction("Index");
-
+            return RedirectToAction("Index", new {id = ListAttendance[0].ClassId });
         }
     }
 }
