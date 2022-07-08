@@ -1,4 +1,5 @@
-﻿@*
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -6,6 +7,8 @@
 }
 @*@using Project.Model*@
 @*@model Account*@
+@using Project.Helpers
+@using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html>
     <head>
@@ -91,11 +94,11 @@
                 </h1>
             </header>
            <div class="breadcrumb">
-            @*    @if(@ViewBag.userName != null)
+                @if(@Context.Session.GetString("username") != null)
                     {
-                        <a> @ViewBag.userName</a>
-                    }*@
-                    <a asp-controller="Home" asp-action="Login"> Login </a>
+                        <a> @Context.Session.GetString("username") </a>
+                    }
+                    <a asp-controller="Login" asp-action="Index" asp-route-s=""> LogOut </a>
                     <a> Campus:FPTU- Hoà Lạc</a>
             </div>
             <div class="content">

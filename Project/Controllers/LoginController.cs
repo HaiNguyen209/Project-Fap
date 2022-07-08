@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Project.Model;
 using System.Linq;
 
@@ -7,38 +8,42 @@ namespace Project.Controllers
 {
     public class LoginController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string s)
         {
+            HttpContext.Session.SetString("username", "");
             return View();
         }
+      
         [HttpPost]
         public IActionResult Index(Account account)
         {
+           
             try
             {
-                ProjectFapContext projectFapContext = new ProjectFapContext();
-
-                var data = projectFapContext.Accounts.Where(a => a.UserName.Equals(account.UserName) && a.Password.Equals(account.Password)).ToList();
-
-                account.RoleId = data[0].RoleId;
-
-                if (data.Count() > 0)
+                if (ModelState.IsValid)
                 {
-                    if (data[0].RoleId == 1)
+                    ProjectFapContext projectFapContext = new ProjectFapContext();
+
+                    var data = projectFapContext.Accounts.Where(a => a.UserName.Equals(account.UserName) && a.Password.Equals(account.Password)).ToList();
+
+                    if (data.Count() > 0)
                     {
-                        return RedirectToAction("IndexTeacher", "Home", new { userName = account.UserName });
+                        HttpContext.Session.SetString("username", account.UserName);
+                        if (data[0].RoleId == 1)
+                        {
+                            return RedirectToAction("IndexTeacher", "Home");
+                        }
+                        else
+                        {
+                            return RedirectToAction("IndexStudent", "Home");
+                        }
                     }
                     else
                     {
-                        return RedirectToAction("IndexStudent", "Home", new { userName = account.UserName });
+                        ViewBag.messNotify = "Username or password error!";
+                        return View();
                     }
                 }
-                else
-                {
-                    ViewBag.messNotify = "Username or password error!";
-                    return View();
-                }
-                  
             }
             catch (System.Exception ex)
             {
