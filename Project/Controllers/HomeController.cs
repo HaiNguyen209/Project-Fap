@@ -1,26 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-//using Project.Models;
-
+using Project.Model;
+using System.Linq;
 
 namespace Project.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string userName)
         {
+            ViewBag.userName = userName;
             return View();
         }
-        public IActionResult Login()
+        public IActionResult IndexTeacher(string userName)
         {
-            // Account account = new Account();
-            // return View(account);
+            ViewBag.userName = userName;
             return View();
         }
-        //[HttpPost]
-        //public IActionResult Login(Account account)
-        //{
-        //    if (ModelState.IsValid)  return View(account);
-        //    else return View(account);
-        //}
+        
+        public IActionResult IndexStudent(string userName)
+        {
+            ViewBag.userName = userName;
+            return View();
+        }
+
     }
 }

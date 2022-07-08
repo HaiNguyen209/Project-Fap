@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LoxMjc8flRjpsTnJDkzHLxYoFLcXIO1UWMzHnHO2d4Nf7M5mXYNtRddhSEKQo9PvOcVNSOiP1QT3AZGpwUr5Yg==",
+  "dgSpecHash": "1WrYHaeaSPliP2xsCwtWDRU4TSQ3WJF48C9lumJxPpzaI3Skeda0Gii8lP4IfPN29+Kt9vBtjwz8K0M6nXgxjw==",
   "success": true,
   "projectFilePath": "D:\\Summer2022\\ProjectFap\\Project\\Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
