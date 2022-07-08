@@ -6,8 +6,9 @@
 @{
     Layout = "~/Views/Shared/Layout.cshtml";
 }
-@using Project.Model
-@model List<Attendance>
+@using Project.Models
+@model dynamic
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +17,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="@Url.Content("~/Styles/Attendence.css")" type="text/css" >
-
+  <style>
+      p{
+        background-color: green;
+        text-align: center;
+        border-radius: 8px;
+        color: white;
+        padding: 2px 3px;
+        max-width: 90%;
+      }
+  </style>
 </head>
 <body>
   <div class="content">
     <h1>Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2"> 
+                    WEEK 
+                 <select > 
+                    <option>11/7 to 17/7</option>
+                    <option>18/7 to 24/7</option>
+                </select> 
+                </td>
+              
+                <td>MON</td>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+                <td>SAT</td>
+                <td>SUN</td>
+            </tr>
+            <tr>
+                <td>11/7</td>
+                <td>12/7</td>
+                <td>13/7</td>
+                <td>14/7</td>
+                <td>15/7</td>
+                <td>16/7</td>
+                <td>17/7</td>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 1; i < 9; i++){
+            <tr>
+                <td>
+                    Slot @i
+                </td>
+                @for (int j = 1; j < 8 ; j++)
+                    {
+                        <td>
+                            @foreach (ScheduleOfTeacher s in Model.Schedule)
+                            {
+                                if(@s.DateId == @j && @s.SlotId == i)
+                                {
+                                    <a>@s.SubjectCode -</a>
+                                    <br /> <span> at @s.Room -</span>
+                                        @foreach(Slot sl in Model.Slots)
+                                        {
+                                            if(@s.SlotId == @sl.Id)
+                                            {
+                                                @*
+                                                var starTime = sl.StartTime.Value.ToString("h:mm");
+                                                var endTime = sl.EndTime.Value.ToString("h:mm");*@
+                                                <p data-title="Hours">@sl.StartTime - @sl.EndTime</p>
+                                            }
+                                        }
+                                    }    
+                            }
+                        </td>
+                    }
+            </tr>
+            }
+        </tbody>
+ 
+    </table>
 </div>
 </body>
 </html>
