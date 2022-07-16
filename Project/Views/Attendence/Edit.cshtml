@@ -10,6 +10,14 @@
 @model List<Attendance>
  
  <div class="content">
+     <a asp-controller="Home" asp-action="IndexTeacher" > Home </a>
+     <span> &gt; </span> 
+     <a asp-controller="Grade" asp-action="Index" > List Class </a>
+     <span> &gt; </span> 
+     <a asp-controller="Grade" asp-action="Index" > Check Attendent </a>
+     <span> &gt; </span> 
+
+     <a href="#" > Edit </a>
     <h1>Edit Attendence</h1>
     <form asp-controller="Attendence" asp-action="Edit" method="post">
         <table>
@@ -33,9 +41,9 @@
                     <input class="content-input" asp-for="@Model[i].ClassId" type="text"  hidden /></td>
                     <td><input class="content-input" asp-for="@Model[i].Id"  readonly/> </td>
                     @*<td><input asp-for="@Model[i].Image" type="text"  /></td>*@
-                    <td><input class="content-input" asp-for="@Model[i].RollNumber" type="text"  /></td>
-                    <td><input class="content-input" asp-for="@Model[i].Code" type="text" /></td>
-                    <td><input class="content-input" asp-for="@Model[i].Name" type="text"  /></td>
+                    <td><input class="content-input" asp-for="@Model[i].RollNumber" type="text" /></td>
+                    <td><input class="content-input" asp-for="@Model[i].Code" type="text"  /></td>
+                    <td><input class="content-input" asp-for="@Model[i].Name" type="text"   /></td>
                     <td>
                         <input id="@Model[i].Id" type="radio" asp-for="@Model[i].Status" value="true" /> <label class="attendend">Attendence</label>
                         <input id="@Model[i].Id" type="radio" asp-for="@Model[i].Status" value="false" /> <lalel class="absent">Absent</lalel> 

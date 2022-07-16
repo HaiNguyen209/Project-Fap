@@ -30,6 +30,11 @@ namespace Project.Controllers
                 return RedirectToAction("Index", "Login");
             }
         }
+        public IActionResult IndexAdmin()
+        {
+            return View();
+
+        }
 
     }
 }

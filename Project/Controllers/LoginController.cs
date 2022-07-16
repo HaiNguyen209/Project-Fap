@@ -32,6 +32,9 @@ namespace Project.Controllers
                         if (data[0].RoleId == 1)
                         {
                             return RedirectToAction("IndexTeacher", "Home");
+                        } 
+                        else if (data[0].RoleId == 0){
+                            return RedirectToAction("IndexAdmin", "Home");
                         }
                         else
                         {

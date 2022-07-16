@@ -3,19 +3,18 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Project.Models
+namespace Project.Modelss
 {
-    public partial class Slot
+    public partial class Date
     {
-        public Slot()
+        public Date()
         {
             ScheduleOfStudents = new HashSet<ScheduleOfStudent>();
             ScheduleOfTeachers = new HashSet<ScheduleOfTeacher>();
         }
 
         public int Id { get; set; }
-        public TimeSpan? StartTime { get; set; }
-        public TimeSpan? EndTime { get; set; }
+        public DateTime? Date1 { get; set; }
 
         public virtual ICollection<ScheduleOfStudent> ScheduleOfStudents { get; set; }
         public virtual ICollection<ScheduleOfTeacher> ScheduleOfTeachers { get; set; }

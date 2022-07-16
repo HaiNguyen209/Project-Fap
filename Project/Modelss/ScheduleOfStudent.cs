@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Project.Models
+namespace Project.Modelss
 {
     public partial class ScheduleOfStudent
     {
@@ -13,9 +13,11 @@ namespace Project.Models
         public int? DateId { get; set; }
         public string Room { get; set; }
         public string StudentId { get; set; }
+        public string GradeId { get; set; }
         public int? SlotId { get; set; }
 
         public virtual Date Date { get; set; }
+        public virtual Grade Grade { get; set; }
         public virtual Slot Slot { get; set; }
         public virtual Student Student { get; set; }
     }

@@ -5,10 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\images\HE130651.jpg" />
+    <None Remove="Images\images\HE140702.jpg" />
+    <None Remove="Images\images\HE141190.jpg" />
     <None Remove="Styles\Attendence.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\images\HE130651.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Images\images\HE140702.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Images\images\HE141190.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="Styles\Attendence.css">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -65,6 +80,15 @@
     <None Include="wwwroot\images\HE153518.png" />
     <None Include="wwwroot\images\HE153773.png" />
     <None Include="wwwroot\images\SE05576.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\HA160108.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\images\HE141786.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

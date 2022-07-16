@@ -1,0 +1,85 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+
+}
+@using Project.Model
+@using System.Linq
+@model Student
+<style>
+    .input-edit{
+        width: 75%;
+        height: 25px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    tr{
+
+    }
+</style>
+<body>
+    <a asp-controller="Home" asp-action="IndexStudent"/> Home
+    <span> &gt; </span> 
+    <a asp-controller="Student" asp-action="ViewProfile" > ViewProfile </a>
+    <span> &gt; </span> 
+    <a href="#" > Update Profile of @Model.UserName</a>
+
+    <h1>
+       Update Profile
+    </h1>
+   <form asp-controller="Student" asp-action="Edit" method="post">
+      <table>
+          <tbody>
+             <tr>
+                 <td> <label>Full Name</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.Name"/> </td>
+             </tr> 
+              <tr>
+                 <td> <label>UserName</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.UserName" /> </td>
+             </tr> 
+             <tr>
+                 <td> <label>Date of Birth</label></td>
+                 <td> <input class="input-edit" type="date" asp-for="@Model.Birthdate"/></td>
+             </tr>
+               <tr>
+                 <td> <label>Gender</label></td>
+                 <td>
+                      <input id="@Model.Gender" type="radio" asp-for="@Model.Gender" value="true" /> <label>Nam</label>
+                      <input id="@Model.Gender" type="radio" asp-for="@Model.Gender" value="false" /> <lalel>Nữ</lalel> 
+             </tr>
+               <tr>
+                 <td><label>Roll Number</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.RollNumber"/></td>
+             </tr>
+               <tr>
+                 <td> <label>Address</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.Address"/></td>
+             </tr>
+               <tr>
+                 <td> <label>Phone</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.Phone"/></td>
+             </tr>
+               <tr>
+                 <td><label>Email</label></td>
+                 <td> <input class="input-edit" asp-for="@Model.Email"/></td>
+             </tr>
+               <tr>
+                 <td><label>Image</label></td>
+                 <td> <input type="file" class="input-edit" asp-for="@Model.Image"/></td>
+             </tr>
+          </tbody>
+      </table>
+    <input  class="edit" type="submit" value="Save" />
+    </form >
+</body>
+
