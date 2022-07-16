@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 
 #nullable disable
 
-namespace Project.Models
+namespace Project.Modelss
 {
     public partial class ProjectFapContext : DbContext
     {
@@ -33,8 +33,8 @@ namespace Project.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var builder = new ConfigurationBuilder()
-                                                     .SetBasePath(Directory.GetCurrentDirectory())
-                                                     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                                             .SetBasePath(Directory.GetCurrentDirectory())
+                                             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             IConfigurationRoot configuration = builder.Build();
             optionsBuilder.UseSqlServer(configuration.GetConnectionString("ProjectFap"));
         }
@@ -148,6 +148,10 @@ namespace Project.Models
 
                 entity.Property(e => e.DateId).HasColumnName("dateId");
 
+                entity.Property(e => e.GradeId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Room)
                     .HasMaxLength(50)
                     .IsUnicode(false);
@@ -168,6 +172,11 @@ namespace Project.Models
                     .WithMany(p => p.ScheduleOfStudents)
                     .HasForeignKey(d => d.DateId)
                     .HasConstraintName("FK_ScheduleOfStudent_Date");
+
+                entity.HasOne(d => d.Grade)
+                    .WithMany(p => p.ScheduleOfStudents)
+                    .HasForeignKey(d => d.GradeId)
+                    .HasConstraintName("FK_ScheduleOfStudent_Grade");
 
                 entity.HasOne(d => d.Slot)
                     .WithMany(p => p.ScheduleOfStudents)
@@ -190,6 +199,10 @@ namespace Project.Models
 
                 entity.Property(e => e.DateId).HasColumnName("dateId");
 
+                entity.Property(e => e.GradeId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Room)
                     .HasMaxLength(50)
                     .IsUnicode(false);
@@ -211,6 +224,11 @@ namespace Project.Models
                     .WithMany(p => p.ScheduleOfTeachers)
                     .HasForeignKey(d => d.DateId)
                     .HasConstraintName("FK_ScheduleOfTeacher_Date");
+
+                entity.HasOne(d => d.Grade)
+                    .WithMany(p => p.ScheduleOfTeachers)
+                    .HasForeignKey(d => d.GradeId)
+                    .HasConstraintName("FK_ScheduleOfTeacher_Grade");
 
                 entity.HasOne(d => d.Slot)
                     .WithMany(p => p.ScheduleOfTeachers)

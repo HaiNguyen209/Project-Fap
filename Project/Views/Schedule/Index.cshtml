@@ -6,7 +6,7 @@
 @{
     Layout = "~/Views/Shared/Layout.cshtml";
 }
-@using Project.Models
+@using Project.Modelss
 @model dynamic
 
 <!DOCTYPE html>
@@ -30,6 +30,10 @@
 </head>
 <body>
   <div class="content">
+      <a asp-controller="Home" asp-action="IndexTeacher" > Home </a>
+     <span> &gt; </span> 
+     <a href="#" > Schedule </a>
+
     <h1>Schedule</h1>
     <table>
         <thead>
@@ -73,14 +77,21 @@
                             {
                                 if(@s.DateId == @j && @s.SlotId == i)
                                 {
-                                    <a>@s.SubjectCode -</a>
+                                    <a style="color:blue">@s.SubjectCode -</a>
                                     <br /> <span> at @s.Room -</span>
+                                    @foreach (Grade g in Model.Grade)
+                                   {
+                                        if(@s.GradeId == g.Id)
+                                        {
+                                            <span style="color:orangered"> @g.ClassName </span>
+                                        }
+                                    }
                                         @foreach(Slot sl in Model.Slots)
                                         {
                                             if(@s.SlotId == @sl.Id)
                                             {
                                                 @*
-                                                var starTime = sl.StartTime.Value.ToString("h:mm");
+                                                var starTime = sl.StartTime.Value.ToString("h:mm"); 
                                                 var endTime = sl.EndTime.Value.ToString("h:mm");*@
                                                 <p data-title="Hours">@sl.StartTime - @sl.EndTime</p>
                                             }

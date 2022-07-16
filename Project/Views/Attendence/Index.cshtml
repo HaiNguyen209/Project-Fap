@@ -19,12 +19,18 @@
 </head>
 <body>
   <div class="content">
+     <a asp-controller="Home" asp-action="IndexTeacher" > Home </a>
+     <span> &gt; </span> 
+     <a asp-controller="Grade" asp-action="Index" > List Class </a>
+     <span> &gt; </span> 
+     <a href="#" > Check Attendence </a>
+
     <h1>Check Attendence</h1>
+
     <table>
         <thead>
             <tr>
                 <td>Index</td>
-                <td>Image</td>
                 <td>Member</td>
                 <td>Code</td>
                 <td>Name</td>
@@ -36,7 +42,6 @@
         {
             <tr>
                 <td>@a.Id</td>
-                <td>image</td>
                 <td>@a.RollNumber</td>
                 <td>@a.Code</td>
                 <td>@a.Name </td>
@@ -47,7 +52,6 @@
                 else
                 {
                 <td class="absent"> Absent </td>
-                        
                 }
             </tr>
 

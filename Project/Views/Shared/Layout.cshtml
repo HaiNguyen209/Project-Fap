@@ -5,14 +5,14 @@
 @{
     
 }
-@*@using Project.Model*@
-@*@model Account*@
+
 @using Project.Helpers
 @using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html>
     <head>
         <style>
+
             .container {
                 max-width: 1024px;
                 margin: auto auto;
@@ -61,11 +61,13 @@
                 margin-top: 1rem;
                 font-weight: 700;
                 margin-bottom: 4rem;
+                border:none;
             }
 
             .edit:hover {
                 background-color: #337ab7;
                 color: #fff;
+                cursor: pointer;
             }
 
             .content table thead tr {
@@ -82,7 +84,22 @@
             }
             .content-input{
                 border:none;
+                pointer-events:none;
             }
+/*            input{
+                width: 75%;
+                height: 25px;
+                padding: 6px 12px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+            }*/
+            a{
+                text-decoration:none;
+            }
+            a:hover{
+                color:blue;            }
 
         </style>
     </head>
@@ -95,9 +112,17 @@
             </header>
            <div class="breadcrumb">
                 @if(@Context.Session.GetString("username") != null)
-                    {
-                        <a> @Context.Session.GetString("username") </a>
-                    }
+                {
+                    <a asp-controller="Student" 
+                        asp-action="ViewProfile" 
+                        asp-route-username="@Context.Session.GetString("username")">
+                        @Context.Session.GetString("username")
+                     </a>
+                }
+                else
+                {
+                 
+                }
                     <a asp-controller="Login" asp-action="Index" asp-route-s=""> LogOut </a>
                     <a> Campus:FPTU- Hoà Lạc</a>
             </div>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Project.Models
+namespace Project.Modelss
 {
     public partial class Attendance
     {

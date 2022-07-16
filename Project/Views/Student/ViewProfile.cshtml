@@ -1,0 +1,79 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+
+}
+@using Project.Model
+@model Student
+
+<style>
+    td{
+     height: 30px;
+     padding: 6px 12px;
+    }
+    label{
+        font-weight: 700;
+    }
+</style>
+<body>
+    <a asp-controller="Home" asp-action="IndexStudent"/> Home
+    <span> &gt; </span> 
+    <a href="#" > User Profile of @Model.UserName</a>
+    <h1>
+        User Profile
+    </h1>
+  <table border="1">
+      <tbody>
+         <tr>
+             <td><label>Full Name</label></td>
+              <td>@Model.Name</td>
+         </tr>
+          <tr>
+             <td> <label>UserName</label></td>
+
+             <td>@Model.UserName</td>
+         </tr>
+         <tr>
+             <td> <label>Date of Birth</label></td>
+             <td>@Model.Birthdate</td>
+         </tr>
+           <tr>
+             <td> <label>Gender</label></td>
+             @if(@Model.Gender == true){
+                    <td>Name</td>
+                }
+                else
+                {
+                    <td>Nữ</td>
+                }
+         </tr>
+           <tr>
+            <td><label>Roll Number</label></td>
+             <td>@Model.RollNumber</td>
+         </tr>
+           <tr>
+              <td> <label>Address</label></td>
+             <td>@Model.Address</td>
+         </tr>
+           <tr>
+            <td> <label>Phone</label></td>
+             <td>@Model.Phone</td>
+         </tr>
+           <tr>
+             <td><label>Email</label></td>
+             <td>@Model.Email</td>
+         </tr>
+           <tr>
+             <td><label>Image</label></td>
+             <td> <img src="@Url.Content(@Model.Image)"  /> 
+                 @Model.Image</td>
+         </tr>
+      </tbody>
+  </table>
+     <a class="edit" asp-controller="Student" asp-action="Edit" asp-route-id="@Model.Id" >Edit</a>
+</body>
+
