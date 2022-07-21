@@ -1,0 +1,71 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@using Project.Modelss
+@model Account
+<style>
+    .input-edit{
+        width: 75%;
+        height: 25px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    tr{
+
+    }
+</style>
+<body>
+    <h1>Create New Account111</h1>
+    <form asp-controller="Manager" asp-action="Add" method="post">
+        <table>
+            <tr>
+                <td><label> User Name</label> </td>
+                <td><input  class="input-edit" type="text" asp-for="@Model.UserName"/></td>
+            </tr> 
+            <tr>
+               <td>
+                    <label> Password</label>
+               </td>  
+                <td><input  class="input-edit"  type="password" asp-for="@Model.Password" name="password" id="password" /></td>
+            </tr> 
+            <tr>
+               <td>
+                    <label> Re - Password</label>
+               </td>
+                <td>
+                    <input  class="input-edit" type= "password" name="confirm_password" id="confirm_password"  />
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label> Role</label>
+                </td>
+                <td>
+                    <input checked name="roleId" type="radio" asp-for="@Model.RoleId" value="1" /><lalel>Teacher</lalel> 
+                    <input name="roleId" type="radio" asp-for="@Model.RoleId"  value="2" /><lalel>Student</lalel> 
+                </td>
+            </tr>
+        </table>
+        <input class="btnsubmit" type="submit" value="Create"/>
+    </form>
+</body>
+@* <script>
+        function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+ </script>*@

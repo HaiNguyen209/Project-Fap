@@ -20,7 +20,10 @@ namespace Project
             services.AddControllersWithViews();
 
             services.AddSession();
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
