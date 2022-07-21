@@ -273,8 +273,19 @@ D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexTeacher.
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\Index.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Class\Index.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Grade\Index.cshtml.g.cs
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\ViewProfile.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\Edit.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Images\HA160108.jpg
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\TimetableOfStudent.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexAdmin.cshtml.g.cs
+<<<<<<< Updated upstream
+=======
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Add.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Edit.cshtml.g.cs
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

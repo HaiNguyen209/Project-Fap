@@ -1,6 +1,6 @@
 ﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @using Project.Modelss
-@model Account
+@model dynamic
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,10 +9,151 @@
     //ViewBag.userName = @ViewBag.userName;
     Layout = "~/Views/Shared/Layout.cshtml";
 }
-<style>
-    
-</style>
 
-<div class="content">
-   Admin
+<style>
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tag{
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+ .tag-student{
+    background-color: green;
+  
+}
+.tag-teacher{
+    background-color: orange;
+}
+.input-search{
+    height: 30px;
+    width: 300px;
+    padding: 0 1rem;
+}
+.input-submit{
+    border-radius: 8px;
+    cursor: pointer;
+}
+.input-submit:hover{
+   background-color:#337ab7;
+}
+.search-form{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+
+}
+</style>
+<head>
+     <script defer src="/your-path-to-fontawesome/js/v4-shims.js"></script>
+     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+</head>
+<form asp-controller="Home" asp-action="IndexAdmin" method="get">
+    <div class="search-form">
+        <input class="input-search" type="text" placeholder="Search" name="searchText" />    
+        <input class="input-submit" type="submit" value=" Search "/> 
+    </div>
+</form>
+
+<a asp-controller="Manager" asp-action="Add">Create Account</a>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Account')" id="defaultOpen">Manager Account</button>
+  <button class="tablinks" onclick="openCity(event, 'Grade')">Manager Grade</button>
+  <button class="tablinks" onclick="openCity(event, 'Attendance')">Manager Attendance</button>
 </div>
+<div id="Account" class="tabcontent" >
+  @*Code thêm sửa xóa cho phần tài khoản, cấp quyền cho tài khoản*@
+  <h1>List Account</h1>
+  <table>
+      <thead>
+          <tr>
+              <td>User Name </td>
+              <td>Password </td>
+              <td>Role </td>
+              <td> </td>
+
+          </tr>
+
+      </thead>
+      <tbody>
+          @foreach (Account a in Model.Account)
+            {
+             <tr>
+                <td>@a.UserName </td>
+                <td> @a.Password</td>
+                @if(@a.Role.Name == "Student"){
+                        <td > <span class="tag tag-student">@a.Role.Name </span></td>
+                    }
+                    else
+                    {
+                        <td > <span class="tag tag-teacher"> @a.Role.Name </span> </td>
+                        
+                    }
+              <td><a asp-controller="Manager" asp-action="Index">Edit</a> </td>
+
+            </tr>
+            }
+      </tbody>
+  </table>
+</div>
+
+<div id="Grade" class="tabcontent" >
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+</div>
+
+<script>
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+</script>

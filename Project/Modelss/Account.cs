@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -14,6 +15,9 @@ namespace Project.Modelss
         }
 
         public string UserName { get; set; }
+
+        [StringLength(12, MinimumLength = 6, ErrorMessage = "length between 6 than 12 characters. ")]
+
         public string Password { get; set; }
         public int? RoleId { get; set; }
 
