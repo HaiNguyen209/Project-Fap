@@ -1,205 +1,17 @@
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\appsettings.Development.json
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\appsettings.json
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.exe
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.deps.json
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.json
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.dev.json
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Project.pdb
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\scopedcss\bundle\Project.styles.css
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\staticwebassets\Project.StaticWebAssets.Manifest.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.dll
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\refint\Project.dll
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.pdb
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.genruntimeconfig.cache
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\ref\Project.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Humanizer.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\System.Runtime.Caching.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\Summer2022\C# .Net\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\C# .Net\Project\Project\obj\Debug\net5.0\Project.csproj.CopyComplete
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\appsettings.Development.json
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.exe
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\appsettings.json
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.deps.json
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.json
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.dev.json
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.Views.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Project.Views.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Humanizer.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\System.Runtime.Caching.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\Summer2022\ProjectDotNet\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cs
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\scopedcss\bundle\Project.styles.css
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\staticwebassets\Project.StaticWebAssets.Manifest.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.TagHelpers.input.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.TagHelpers.output.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.RazorCoreGenerate.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cs
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.Views.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.csproj.CopyComplete
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.dll
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\refint\Project.dll
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.pdb
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Project.genruntimeconfig.cache
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\ref\Project.dll
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
-D:\Summer2022\ProjectDotNet\Project\Project\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Summer2022\Project\Project\bin\Debug\net5.0\appsettings.Development.json
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.exe
-D:\Summer2022\Project\Project\bin\Debug\net5.0\appsettings.json
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.deps.json
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.json
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.runtimeconfig.dev.json
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.Views.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Project.Views.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Humanizer.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\System.Runtime.Caching.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\Summer2022\Project\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\scopedcss\bundle\Project.styles.css
-D:\Summer2022\Project\Project\obj\Debug\net5.0\staticwebassets\Project.StaticWebAssets.Manifest.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.TagHelpers.input.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.TagHelpers.output.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.RazorCoreGenerate.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.Views.pdb
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.csproj.CopyComplete
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.dll
-D:\Summer2022\Project\Project\obj\Debug\net5.0\refint\Project.dll
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.pdb
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Project.genruntimeconfig.cache
-D:\Summer2022\Project\Project\obj\Debug\net5.0\ref\Project.dll
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Login\FormLogin.cshtml.g.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Login\Index1.cshtml.g.cs
-D:\Summer2022\Project\Project\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cache
-D:\Summer2022\Project-Fap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cs
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\appsettings.Development.json
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Project.exe
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\appsettings.json
+D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Images\HA160108.jpg
+D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\wwwroot\images\HA160108.jpg
+D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\wwwroot\images\HE141786.jpg
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Project.deps.json
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Project.runtimeconfig.json
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Project.runtimeconfig.dev.json
@@ -239,22 +51,27 @@ D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\runtimes\win-x86\native\Micros
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.csproj.AssemblyReference.cache
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.AssemblyInfoInputs.cache
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.AssemblyInfo.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.csproj.CoreCompileInputs.cache
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.MvcApplicationPartsAssemblyInfo.cache
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cache
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorAssemblyInfo.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\scopedcss\bundle\Project.styles.css
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\staticwebassets\Project.StaticWebAssets.Manifest.cache
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.TagHelpers.input.cache
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.TagHelpers.output.cache
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorCoreGenerate.cache
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Attendence\Edit.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Attendence\Index.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Class\Index.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Grade\Index.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexAdmin.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexStudent.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexTeacher.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Add.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Edit.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\Index.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\TimetableOfStudent.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Shared\Layout.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\Edit.cshtml.g.cs
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\ViewProfile.cshtml.g.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cache
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.RazorTargetAssemblyInfo.cs
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.Views.pdb
@@ -264,28 +81,4 @@ D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\refint\Project.dll
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.pdb
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Project.genruntimeconfig.cache
 D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\ref\Project.dll
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Attendence\Edit.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\wwwroot\images\HA160108.jpg
-D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\wwwroot\images\HE141786.jpg
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Shared\Layout.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexStudent.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexTeacher.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\Index.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Class\Index.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Grade\Index.cshtml.g.cs
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\ViewProfile.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Student\Edit.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\bin\Debug\net5.0\Images\HA160108.jpg
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Schedule\TimetableOfStudent.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Home\IndexAdmin.cshtml.g.cs
-<<<<<<< Updated upstream
-=======
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Add.cshtml.g.cs
-D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\Edit.cshtml.g.cs
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+D:\Summer2022\ProjectFap\Project\obj\Debug\net5.0\Razor\Views\Manager\AddGrade.cshtml.g.cs

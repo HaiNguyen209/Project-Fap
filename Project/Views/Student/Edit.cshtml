@@ -31,7 +31,7 @@
     <span> &gt; </span> 
     <a asp-controller="Student" asp-action="ViewProfile" > ViewProfile </a>
     <span> &gt; </span> 
-    <a href="#" > Update Profile of @Model.UserName</a>
+    <a href="#" > Update Profile </a>
 
     <h1>
        Update Profile
@@ -41,37 +41,59 @@
           <tbody>
              <tr>
                  <td> <label>Full Name</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.Name"/> </td>
+                 <td> 
+                     <input class="input-edit" asp-for="@Model.Name"/> 
+                     <br /><span style="color:red" asp-validation-for="Name" ></span>
+
+                 </td>
+
              </tr> 
               <tr>
                  <td> <label>UserName</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.UserName" /> </td>
+                 <td> <input class="input-edit" asp-for="@Model.UserName" />
+                     <br /><span style="color:red" asp-validation-for="UserName" ></span>
+                     </td>
+
              </tr> 
              <tr>
                  <td> <label>Date of Birth</label></td>
                  <td> <input class="input-edit" type="date" asp-for="@Model.Birthdate"/></td>
+
              </tr>
                <tr>
                  <td> <label>Gender</label></td>
                  <td>
                       <input id="@Model.Gender" type="radio" asp-for="@Model.Gender" value="true" /> <label>Nam</label>
                       <input id="@Model.Gender" type="radio" asp-for="@Model.Gender" value="false" /> <lalel>Nữ</lalel> 
+                 </td>
+
              </tr>
                <tr>
                  <td><label>Roll Number</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.RollNumber"/></td>
+                 <td> <input class="input-edit" asp-for="@Model.RollNumber"/>
+                 
+                     <br /><span style="color:red" asp-validation-for="RollNumber" ></span>
+                     
+                 </td>
              </tr>
                <tr>
                  <td> <label>Address</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.Address"/></td>
+                 <td> <input class="input-edit" asp-for="@Model.Address"/>
+                     <br /><span style="color:red" asp-validation-for="Address" ></span></td>
              </tr>
                <tr>
                  <td> <label>Phone</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.Phone"/></td>
+                 <td> 
+                     <input class="input-edit" asp-for="@Model.Phone"/>
+                 <br /><span style="color:red" asp-validation-for="Phone" ></span>
+                 </td>
              </tr>
                <tr>
                  <td><label>Email</label></td>
-                 <td> <input class="input-edit" asp-for="@Model.Email"/></td>
+                 <td> 
+                     <input class="input-edit" asp-for="@Model.Email"/>
+                       <br /><span style="color:red" asp-validation-for="Phone" ></span>
+                       </td>
              </tr>
                <tr>
                  <td><label>Image</label></td>
@@ -79,11 +101,9 @@
              </tr>
           </tbody>
       </table>
-<<<<<<< Updated upstream
-    <input  class="edit" type="submit" value="Save" />
-=======
+
     <input  class="btnsubmit" type="submit" value="Save" />
->>>>>>> Stashed changes
+
     </form >
 </body>
 

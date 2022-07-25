@@ -25,15 +25,13 @@ namespace Project.Controllers
         [HttpPost]
         public IActionResult Edit(Student student)
         {
-            //string filename = Path.GetFileNameWithoutExtension(student.Image);
-            //string extention = Path.GetExtension(student.Image);
-            //filename = filename + DateTime.Now.ToString("yymmssfff") + extention;
-            //student.Image = "~/Images/" + filename;
-            //filename = Path.Combine(Server.MapPath("~/Images"))
-
-            context.Students.Update(student);
-            context.SaveChanges();
-            return RedirectToAction("ViewProfile");
+            if (ModelState.IsValid)
+             {
+                context.Students.Update(student);
+                context.SaveChanges();
+                return RedirectToAction("ViewProfile");
+            }
+            return View(student);
         }
 
     }
