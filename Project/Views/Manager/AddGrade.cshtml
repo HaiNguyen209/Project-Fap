@@ -1,0 +1,56 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@using Project.Modelss
+@model Grade
+<style>
+    .input-edit{
+        width: 75%;
+        height: 25px;
+        padding: 6px 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    tr{
+
+    }
+</style>
+    
+<body>
+    <a >Home</a>
+  
+    <h1>Create New Grade</h1>
+    <form asp-controller="Manager" asp-action="AddGrade" method="post">
+        <table>
+            <tr>
+                <td><label> Grade ID </label> </td>
+                <td>
+                    <input  class="input-edit"  type="text" asp-for="@Model.Id"/>
+                    @if (ViewBag.Notify != null)
+                    {
+                         <br /><span style="color:red" > @ViewBag.Notify </span>
+                    }
+                </td>
+            </tr> 
+             <tr>
+                <td><label> Grade Name </label> </td>
+                <td><input  class="input-edit"  type="text" asp-for="@Model.ClassName"/></td>
+            </tr> 
+         
+        </table>
+        <input class="btnsubmit" type="submit" value="Create"/>
+    </form>
+</body>
+
+<script>
+   
+  
+</script>

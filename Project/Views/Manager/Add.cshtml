@@ -24,27 +24,32 @@
     }
 </style>
 <body>
-    <h1>Create New Account111</h1>
+    <a >Home</a>
+
+    <h1>Create New Account</h1>
     <form asp-controller="Manager" asp-action="Add" method="post">
         <table>
             <tr>
                 <td><label> User Name</label> </td>
-                <td><input  class="input-edit" type="text" asp-for="@Model.UserName"/></td>
+                <td>
+                    <input  class="input-edit"  type="text" asp-for="@Model.UserName"/>
+                      @if (ViewBag.Notify != null)
+                    {
+                         <br /><span style="color:red" > @ViewBag.Notify </span>
+                    }
+                </td>
             </tr> 
             <tr>
                <td>
                     <label> Password</label>
                </td>  
-                <td><input  class="input-edit"  type="password" asp-for="@Model.Password" name="password" id="password" /></td>
-            </tr> 
-            <tr>
-               <td>
-                    <label> Re - Password</label>
-               </td>
                 <td>
-                    <input  class="input-edit" type= "password" name="confirm_password" id="confirm_password"  />
+                    <input  class="input-edit"  type="password" asp-for="@Model.Password" name="password" id="password" />
+                    <br /><span style="color:red" asp-validation-for="Password" ></span>
+                    
                 </td>
             </tr> 
+ 
             <tr>
                 <td>
                     <label> Role</label>

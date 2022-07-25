@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -14,6 +16,7 @@ namespace Project.Modelss
             ScheduleOfTeachers = new HashSet<ScheduleOfTeacher>();
         }
 
+        
         public string Id { get; set; }
         public string ClassName { get; set; }
         public int? QuantityStudents { get; set; }
@@ -21,5 +24,7 @@ namespace Project.Modelss
         public virtual ICollection<Attendance> Attendances { get; set; }
         public virtual ICollection<ScheduleOfStudent> ScheduleOfStudents { get; set; }
         public virtual ICollection<ScheduleOfTeacher> ScheduleOfTeachers { get; set; }
+
+     
     }
 }

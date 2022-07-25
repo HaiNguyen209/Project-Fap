@@ -22,11 +22,8 @@
 <body>
     <a asp-controller="Home" asp-action="IndexStudent"/> Home
     <span> &gt; </span> 
-<<<<<<< Updated upstream
-    <a href="#" > User Profile of @Model.UserName</a>
-=======
-    <a href="#" > User Profile</a>
->>>>>>> Stashed changes
+    <a href="#" > User Profile </a>
+
     <h1>
         User Profile
     </h1>
@@ -47,8 +44,8 @@
          </tr>
            <tr>
              <td> <label>Gender</label></td>
-             @if(@Model.Gender == true){
-                    <td>Name</td>
+                @if(@Model.Gender == true){
+                    <td>Nam</td>
                 }
                 else
                 {
@@ -78,6 +75,6 @@
          </tr>
       </tbody>
   </table>
-     <a class="edit" asp-controller="Student" asp-action="Edit" asp-route-id="@Model.Id" >Edit</a>
+     <a class="btnsubmit" asp-controller="Student" asp-action="Edit" asp-route-id="@Model.Id" >Edit</a>
 </body>
 

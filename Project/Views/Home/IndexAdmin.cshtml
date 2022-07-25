@@ -61,7 +61,8 @@
 .input-search{
     height: 30px;
     width: 300px;
-    padding: 0 1rem;
+    padding: 0 1rem; 
+    margin-right:1rem;
 }
 .input-submit{
     border-radius: 8px;
@@ -75,21 +76,36 @@
     justify-content: end;
     margin-bottom: 1rem;
     margin-right: .5rem;
+}
+.create-account{
+    background-color:#337ab7;
+    color:white;
+    padding: 1rem;
+    margin:.5rem;
+    font-weight:700;
+    line-height: 60px;
+    border-radius:8px;
+}
+.create-account:hover{
+    background-color:#339ab3;
 
+}
+.head-content{
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+    margin-bottom:1rem;
 }
 </style>
 <head>
      <script defer src="/your-path-to-fontawesome/js/v4-shims.js"></script>
      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 </head>
-<form asp-controller="Home" asp-action="IndexAdmin" method="get">
-    <div class="search-form">
-        <input class="input-search" type="text" placeholder="Search" name="searchText" />    
-        <input class="input-submit" type="submit" value=" Search "/> 
-    </div>
-</form>
 
-<a asp-controller="Manager" asp-action="Add">Create Account</a>
+
+ <a class="create-account" asp-controller="Manager" asp-action="Add">Create Account</a>
+ <a class="create-account" asp-controller="Manager" asp-action="AddGrade">Create Grade</a>
+
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Account')" id="defaultOpen">Manager Account</button>
@@ -98,7 +114,21 @@
 </div>
 <div id="Account" class="tabcontent" >
   @*Code thêm sửa xóa cho phần tài khoản, cấp quyền cho tài khoản*@
-  <h1>List Account</h1>
+  <div class="head-content">
+      <h1>List Account</h1>
+
+      <label class="tag tag-student"> Student </label><span>: @Model.QuantityStudent  </span> 
+      <label class="tag tag-teacher"> Teacher</label> <span>: @Model.QuantityTeacher</span>
+
+
+      <form asp-controller="Home" asp-action="IndexAdmin">
+        <div class="search-form">
+            <input class="input-search" type="text" placeholder="Search" name="searchText" />    
+            <input class="input-submit" type="submit" value=" Search "/> 
+        </div>
+     </form>
+  </div>
+  <hr />
   <table>
       <thead>
           <tr>
@@ -106,9 +136,9 @@
               <td>Password </td>
               <td>Role </td>
               <td> </td>
+              <td> </td>
 
           </tr>
-
       </thead>
       <tbody>
           @foreach (Account a in Model.Account)
@@ -117,27 +147,51 @@
                 <td>@a.UserName </td>
                 <td> @a.Password</td>
                 @if(@a.Role.Name == "Student"){
-                        <td > <span class="tag tag-student">@a.Role.Name </span></td>
+                        <td style="padding: .5rem" > <span class="tag tag-student">@a.Role.Name </span></td>
                     }
                     else
                     {
-                        <td > <span class="tag tag-teacher"> @a.Role.Name </span> </td>
-                        
+                        <td style="padding: .5rem" > <span class="tag tag-teacher"> @a.Role.Name </span> </td>
                     }
-              <td><a asp-controller="Manager" asp-action="Index">Edit</a> </td>
-
+              <td>
+                  <a asp-controller="Manager" asp-action="Edit" asp-route-username="@a.UserName">Edit</a> 
+              </td>
+              <td>
+                  <a asp-controller="Manager" asp-action="Delete" asp-route-username="@a.UserName">Delete</a>
+              </td>
             </tr>
             }
       </tbody>
   </table>
+    
 </div>
 
 <div id="Grade" class="tabcontent" >
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+  <h1>List Grade</h1>
+    <table>
+      <thead>
+          <tr>
+              <td>Grade Name </td>
+              <td>Quantity Student of Grade </td>
+          </tr>
+      </thead>
+      <tbody>
+          @foreach (Grade g in Model.Grade)
+            {
+             <tr>
+                <td>@g.ClassName </td>
+              @*  @for (int i = 0; i < @ViewBag.QuantityStudentOfEachGrade.Length; i++)
+                    {
+                        <td>@ViewBag.QuantityStudentOfEachGrade[i]</td>
+                    }*@
+
+            </tr>
+            }
+      </tbody>
+  </table> 
 </div>
 
-</div>
+
 
 <script>
 
